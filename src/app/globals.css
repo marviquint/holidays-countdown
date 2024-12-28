@@ -1,0 +1,36 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom styling */
+body {
+  @apply bg-gradient-to-b from-blue-700 to-gray-900 text-white;
+}
+
+h1, h2 {
+  @apply font-extrabold text-shadow-md;
+}
+
+.text-shadow-md {
+  text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.5);
+}
+
+.timer-container {
+  @apply flex flex-col items-center justify-center p-6 bg-white bg-opacity-10 rounded-lg shadow-lg;
+}
+
+.timer-label {
+  @apply text-2xl font-bold uppercase text-gray-300;
+}
+
+.timer-values {
+  @apply mt-4 flex space-x-4 text-3xl font-mono text-green-400;
+}
+
+.timer-section {
+  @apply flex flex-col items-center;
+}
+
+.timer-unit {
+  @apply text-sm font-medium text-gray-400;
+}
